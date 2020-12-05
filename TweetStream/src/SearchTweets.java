@@ -20,11 +20,11 @@ public class SearchTweets {
     public static void main(String[] args) throws SQLException {
 
         ConfigurationBuilder cb = new ConfigurationBuilder();
-        cb.setDebugEnabled(true);
-        cb.setOAuthConsumerKey("Ru4LHmOqMJtCPcql8svCIoSE1");
-        cb.setOAuthConsumerSecret("upgUkIEQXtZ1ZsI1lUYeNni6HXNZ2lpT0yCZRw6QVOm9LOhHjC");
-        cb.setOAuthAccessToken("2412059190-4YPhhB1jExNxgipuBIFXQp4EfYHjAScv7Wha0Eg");
-        cb.setOAuthAccessTokenSecret("cDZ9uZhCkAWA4kwJCZJVmPV8wLGgaBTsIGz3HV83smCDK");
+        cb.setDebugEnabled(true)
+  		.setOAuthConsumerKey("your consumer key")
+ 		 .setOAuthConsumerSecret("your consumer secret")
+ 		 .setOAuthAccessToken("your access token")
+ 		 .setOAuthAccessTokenSecret("your access token secret");
 
         TwitterStream twitterStream = new TwitterStreamFactory(cb.build()).getInstance();
 
